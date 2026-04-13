@@ -1,0 +1,151 @@
+/* .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align: center;
+} */
+
+
+/* for index file  */
+
+.parent-container{
+    display: flex;   
+    flex-direction: row;       /* This aligns children side-by-side */
+    justify-content: center; /* This centers them horizontally */
+    align-items: center;     /* This centers them vertically (if height is set) */
+    gap: 40px;
+}
+.box {
+    /* Optional: give them a specific width so they don't squash */
+    width: 200px; 
+    padding: 20px;
+    border: 2px solid black;
+
+    border-radius: 8px;       /* Rounded corners for a button look */
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;          /* Makes the mouse look like a hand */
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-title{
+  text-align: center;   /* This centers the text horizontally */
+    margin-top: 50px;     /* Adds some space from the very top */
+    margin-bottom: 30px;  /* Adds space between the title and your buttons */
+    font-family: Arial, sans-serif; 
+    font-size: 3rem;      /* Makes it nice and big */
+    color: #333;
+}
+
+.button1{
+  background-color: #e6c7a8; /* Muted Sand */
+    color: #333;
+}
+.button2{
+  background-color: #ccd5ae; /* Muted Sage Green */
+    color: #333;
+}
+/* 
+body {
+    /* A soft cream to very light yellow gradient 
+    background: linear-gradient(135deg, #c19e12 0%, #6e6543 100%);
+    
+    /* This adds a subtle "grainy" texture so it feels like paper 
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    } 
+*/
+body {
+    /* Step 1: Use a soft, muted green (Sage/Tea Green) */
+    background-color: #a29049;
+background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    
+    /* Step 3: Standard layout fixes */
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Step 4: Darker forest-green text for better readability on green bg */
+    color: #2f3526;
+}
+
+.header-conatiner {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-title {
+    /* 1. Deep color for high contrast against green */
+    color: #da3b1398; 
+    
+    /* 2. Big and Bold */
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    
+    /* 3. The "Lift" Effect */
+    /* A soft white glow + a crisp dark shadow makes the text stand out */
+    /* text-shadow: 
+        1px 1px 0px rgba(255, 255, 255, 0.4), 
+        4px 4px 8px rgba(0, 0, 0, 0.2); */
+    
+    /* 4. Letter spacing makes it look professional */
+    letter-spacing: -1px;
+}
+
+.header-conatiner p {
+    color: #050000; 
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 10px;
+    
+    max-width: 700px;
+    
+    text-align: left;
+}
+
+
+
+
+
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  gap: 0; /* no space between */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 20px;
+}
+
+.col {
+  padding: 20px;
+  text-align: center;
+  border-right: 2px solid black; /* add divider */
+}
+
+/* Remove last column's right border */
+.col:last-child {
+  border-right: none;
+}
+
+
+.research-list{
+  font-size: 30px;
+}
